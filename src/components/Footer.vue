@@ -16,7 +16,7 @@ import { IconBrandFacebook } from '@tabler/icons-vue';
                         <IconBrandInstagram />
                     </a>
                 </div>
-                <p class="mt-3">© 2021 NUKang Interior</p>
+                <p class="mt-3">© 2023 NUKang Interior</p>
             </div>
         </div>
     </div>

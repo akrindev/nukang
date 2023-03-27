@@ -18,7 +18,7 @@ const services = [
             </h1>
         </div>
         <div class="flex justify-center items-center w-full">
-            <div class="my-12 grid grid-cols-2 gap-3 w-full">
+            <div class="my-12 grid grid-cols-1 lg:grid-cols-2 gap-3 w-full">
                 <!-- menggunakan v-for untuk mengulang component ServiceCard sebanyak 6 kali -->
                 <div v-for="service in services" :key="service.name">
                     <div class="flex items-center">

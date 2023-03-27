@@ -9,10 +9,10 @@ import { IconBrandFacebook } from '@tabler/icons-vue';
         <div class="flex justify-center">
             <div class="flex flex-col items-center">
                 <div class="flex flex-row">
-                    <a href="https://www.facebook.com/">
+                    <a href="https://web.facebook.com/profile.php?id=100091372417924&mibextid=ZbWKwL&_rdc=1&_rdr">
                         <IconBrandFacebook />
                     </a>
-                    <a href="https://www.instagram.com/">
+                    <a href="https://www.instagram.com/nukang_interior">
                         <IconBrandInstagram />
                     </a>
                 </div>

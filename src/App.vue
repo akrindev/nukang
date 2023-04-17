@@ -1,13 +1,21 @@
 <script setup>
-import Header from './components/Header.vue'
-import Products from './components/Products.vue';
-import Service from './components/Service.vue';
-import Footer from './components/Footer.vue';
+import Footer from "./components/Footer.vue";
+import NavHeader from "./components/NavHeader.vue";
 </script>
 
 <template>
-  <Header />
-  <Products />
-  <Service />
+  <NavHeader />
+  <router-view></router-view>
   <Footer />
 </template>
+
+<style>
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.4s;
+}
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+</style>

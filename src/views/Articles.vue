@@ -2,10 +2,11 @@
 import { onMounted, ref } from "vue";
 
 let articles = ref([]);
+let domain = import.meta.env.VITE_PUBLIC_API_URL;
 
 onMounted(async () => {
   const response = await fetch(
-    import.meta.env.VITE_PUBLIC_API_URL + "/articles",
+    import.meta.env.VITE_PUBLIC_API_URL + "/api/articles?populate=*",
     {
       method: "GET",
       headers: {
@@ -31,6 +32,11 @@ onMounted(async () => {
     <ul class="max-w-3xl">
       <li v-for="article in articles" :key="article.id" class="py-8">
         <router-link :to="'/articles/' + article.id">
+          <img
+            :src="domain + article.attributes.thumbnail.data.attributes.url"
+            :alt="article.attributes.judul"
+            class="rounded-md shadow"
+          />
           <div class="pb-5 text-lg font-bold underline">
             {{ article.attributes.judul }}
           </div>

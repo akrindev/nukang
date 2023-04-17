@@ -1,16 +1,24 @@
 <script setup>
-import { ref, onMounted } from "vue";
+import { ref, onMounted, computed } from "vue";
 import { useRoute } from "vue-router";
-// get id from route
+import { marked } from "marked";
 
 const route = useRoute();
 
 const article = ref({});
 const loading = ref(true);
+const domain = import.meta.env.VITE_PUBLIC_API_URL;
+
+const markdownToHtml = (content) => {
+  return marked(content);
+};
 
 onMounted(async () => {
   await fetch(
-    import.meta.env.VITE_PUBLIC_API_URL + "/articles/" + route.params.id,
+    import.meta.env.VITE_PUBLIC_API_URL +
+      "/api/articles/" +
+      route.params.id +
+      "?populate=*",
     {
       method: "GET",
       headers: {
@@ -32,11 +40,14 @@ onMounted(async () => {
 
 <template>
   <div v-if="!loading" class="py-32 px-5 lg:px-0 mx-auto max-w-5xl">
-    <div class="pb-5 text-3xl font-bold">
+    <img
+      :src="domain + article.attributes.thumbnail.data.attributes.url"
+      :alt="article.attributes.judul"
+      class="rounded-md shadow"
+    />
+    <div class="py-5 text-3xl font-bold">
       {{ article.attributes.judul }}
     </div>
-    <p>
-      {{ article.attributes.content }}
-    </p>
+    <p v-html="markdownToHtml(article.attributes.content)" />
   </div>
 </template>

@@ -30,7 +30,7 @@ onMounted(async () => {
     </div>
     <ul class="max-w-3xl">
       <li v-for="article in articles" :key="article.id" class="py-8">
-        <router-link :to="'/article/' + article.id">
+        <router-link :to="'/articles/' + article.id">
           <div class="pb-5 text-lg font-bold underline">
             {{ article.attributes.judul }}
           </div>

@@ -11,6 +11,7 @@
     "@tabler/icons-vue": "^2.11.0",
     "dotenv": "^16.0.3",
     "pinia": "^2.0.32",
+    "vite-plugin-vue-markdown": "^0.22.5",
     "vue": "^3.2.47",
     "vue-router": "^4.1.6"
   },

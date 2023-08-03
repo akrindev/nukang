@@ -1,5 +1,9 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 dependencies:
   '@tabler/icons-vue':
     specifier: ^2.11.0
@@ -15,7 +19,7 @@ dependencies:
     version: 2.0.33(vue@3.2.47)
   vite-plugin-vue-markdown:
     specifier: ^0.22.5
-    version: 0.22.5(vite@4.2.1)
+    version: 0.22.5(vite@4.2.3)
   vue:
     specifier: ^3.2.47
     version: 3.2.47
@@ -26,7 +30,7 @@ dependencies:
 devDependencies:
   '@vitejs/plugin-vue':
     specifier: ^4.0.0
-    version: 4.1.0(vite@4.2.1)(vue@3.2.47)
+    version: 4.1.0(vite@4.2.3)(vue@3.2.47)
   autoprefixer:
     specifier: ^10.4.14
     version: 10.4.14(postcss@8.4.21)
@@ -37,8 +41,8 @@ devDependencies:
     specifier: ^3.2.7
     version: 3.2.7(postcss@8.4.21)
   vite:
-    specifier: ^4.1.4
-    version: 4.2.1
+    specifier: ^4.2.3
+    version: 4.2.3
 
 packages:
 
@@ -332,14 +336,14 @@ packages:
     resolution: {integrity: sha512-eC4U9MlIcu2q0KQmXszyn5Akca/0jrQmwDRgpAMJai7qBWq4amIQhZyNau4VYGtCeALvW1/NtjzJJ567aZxfKA==}
     dev: false
 
-  /@vitejs/plugin-vue@4.1.0(vite@4.2.1)(vue@3.2.47):
+  /@vitejs/plugin-vue@4.1.0(vite@4.2.3)(vue@3.2.47):
     resolution: {integrity: sha512-++9JOAFdcXI3lyer9UKUV4rfoQ3T1RN8yDqoCLar86s0xQct5yblxAE+yWgRnU5/0FOlVCpTZpYSBV/bGWrSrQ==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
       vite: ^4.0.0
       vue: ^3.2.25
     dependencies:
-      vite: 4.2.1
+      vite: 4.2.3
       vue: 3.2.47
     dev: true
 
@@ -1062,7 +1066,7 @@ packages:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
     dev: true
 
-  /vite-plugin-vue-markdown@0.22.5(vite@4.2.1):
+  /vite-plugin-vue-markdown@0.22.5(vite@4.2.3):
     resolution: {integrity: sha512-VH0SbESc6ij+iC9AQ9BG40yayHmYwoVyJ4ZjcWQzg0O3hdxW4yYt7c7JmRkKHCkECb8Dsp02VsAUV4YLy29hhg==}
     peerDependencies:
       vite: ^2.0.0 || ^3.0.0-0 || ^4.0.0
@@ -1074,13 +1078,13 @@ packages:
       '@rollup/pluginutils': 5.0.2
       '@types/markdown-it': 12.2.3
       markdown-it: 13.0.1
-      vite: 4.2.1
+      vite: 4.2.3
     transitivePeerDependencies:
       - rollup
     dev: false
 
-  /vite@4.2.1:
-    resolution: {integrity: sha512-7MKhqdy0ISo4wnvwtqZkjke6XN4taqQ2TBaTccLIpOKv7Vp2h4Y+NpmWCnGDeSvvn45KxvWgGyb0MkHvY1vgbg==}
+  /vite@4.2.3:
+    resolution: {integrity: sha512-kLU+m2q0Y434Y1kCy3TchefAdtFso0ILi0dLyFV8Us3InXTU11H/B5ZTqCKIQHzSKNxVG/yEx813EA9f1imQ9A==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
     peerDependencies:
